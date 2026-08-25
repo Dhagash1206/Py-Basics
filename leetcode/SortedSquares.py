@@ -1,13 +1,11 @@
-class Solution:
+class Solution: 
     def sortedSquares(self, nums):
         n = len(nums)
         ans = [0] * n
 
-        # Compare the largest absolute values from both ends
         left = 0
         right = n - 1
 
-        # Fill the result from largest to smallest
         for i in range(n - 1, -1, -1):
             if abs(nums[left]) > abs(nums[right]):
                 ans[i] = nums[left] ** 2
