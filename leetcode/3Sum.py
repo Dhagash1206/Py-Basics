@@ -10,7 +10,6 @@ class Solution:
 
         # Fix one number and use two pointers for the remaining two
         for i in range(n - 2):
-
             # Since the array is sorted, no later triplet can sum to 0
             if nums[i] > 0:
                 break
